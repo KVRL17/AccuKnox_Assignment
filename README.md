@@ -7,12 +7,19 @@
 
 # Step 1: Set Up the Project
 **1.Create a New React Project**:
+
 npx create-react-app my-dashboard
+
 cd my-dashboard
+
 **2.Install Redux and React-Redux**:
+
 npm install @reduxjs/toolkit react-redux
+
 **3.Install Other Dependencies** (if needed):
+
 If you need other libraries like prop-types, axios, or react-router-dom, install them now:
+
 npm install prop-types axios react-router-dom
 
 # Step 2: Organize the Project Structure
