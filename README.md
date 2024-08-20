@@ -2,6 +2,7 @@
 
 # Prerequisites
 **Node.js**: Ensure that Node.js is installed on your machine. You can download it from nodejs.org.
+
 **npm**: npm (Node Package Manager) comes with Node.js. It will be used to install dependencies.
 
 # Step 1: Set Up the Project
