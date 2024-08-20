@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+/* App.css */
+
+.dashboard {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: aliceblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.category {
+  width: 100%;
+  margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.widgets {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.widget {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: calc(33.333% - 20px);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.widget h3 {
+  margin-top: 0;
+}
+
+.widget button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-widget-modal {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+.add-widget-modal input,
+.add-widget-modal textarea {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.add-widget-modal button {
+  padding: 10px 20px;
+  background-color: #007bff;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
